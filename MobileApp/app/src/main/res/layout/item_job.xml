@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_gap">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jobContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary90"
+        android:layout_gravity="top">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/companylogo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/small_gap"
+            app:civ_border_color="@color/material_dynamic_neutral0"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/guanaco" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_gap"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:layout_marginEnd="@dimen/small_gap"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textColor="@color/my_app_on_secondary_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/companylogo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Mantenimiento de Base de Datos" />
+
+        <TextView
+            android:id="@+id/jobSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:textColor="@color/my_app_on_secondary_container"
+            app:layout_constraintEnd_toEndOf="@+id/jobTitle"
+            app:layout_constraintStart_toStartOf="@+id/jobTitle"
+            app:layout_constraintTop_toBottomOf="@+id/jobTitle"
+            tools:text="Lunes a Viernes,8AM - 4PM" />
+
+        <TextView
+            android:id="@+id/jobSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginBottom="@dimen/small_gap"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textColor="@color/my_app_on_secondary_container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/jobSchedule"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="@+id/jobSchedule"
+            app:layout_constraintTop_toBottomOf="@+id/jobSchedule"
+            tools:text="$2,000 Mensuales" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary95"
+        android:layout_gravity="bottom">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/employerlogo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:layout_marginBottom="@dimen/small_gap"
+            app:civ_border_color="@color/material_dynamic_neutral0"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/guanaco" />
+
+        <TextView
+            android:id="@+id/employerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/my_app_on_secondary_container"
+            app:layout_constraintEnd_toStartOf="@+id/employerlogo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dario Nuñez" />
+
+        <TextView
+            android:id="@+id/employerProfession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="@color/my_app_on_secondary_container"
+            app:layout_constraintEnd_toStartOf="@+id/employerlogo"
+            app:layout_constraintTop_toBottomOf="@+id/employerUser"
+            tools:text="Veterinario" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

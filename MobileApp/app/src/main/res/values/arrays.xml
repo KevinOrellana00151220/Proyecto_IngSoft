@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="professions">
+        <item>Arquitectura</item>
+        <item>Derecho</item>
+        <item>Informática</item>
+        <item>Química</item>
+        <item>Industrial</item>
+        <item>Diseño Gráfico</item>
+        <item>Electrónica</item>
+        <item>Mecánico</item>
+        <item>Empleos Informales</item>
+        <item>Educación</item>
+        <item>Medicina General</item>
+        <item>Medicina Especializada</item>
+        <item>Artes</item>
+        <item>Lenguas</item>
+        <item>Repartidor</item>
+        <item>Emprendimiento</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="locations">
+        <item>San Salvador</item>
+        <item>San Miguel</item>
+        <item>San Vicente</item>
+        <item>Santa Ana</item>
+        <item>Sonsonate</item>
+        <item>Ahuachapán</item>
+        <item>Cuscatlán</item>
+        <item>Chalatenango</item>
+        <item>La Libertad</item>
+        <item>La Paz</item>
+        <item>La Unión</item>
+        <item>Morazán</item>
+        <item>Cabañas</item>
+        <item>Usulután</item>
+    </string-array>
+</resources>

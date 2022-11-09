@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Descargas Chrome/MobileApp/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Descargas Chrome/MobileApp/MobileApp/app/src/main/res/layout/item_department.xml" value="0.33" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1685" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/drawable/splash_background.xml" value="0.15" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/activity_register.xml" value="0.23125" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/activity_splash.xml" value="0.18802083333333333" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_add_job_offer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_add_job_offer_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_forgot_pass_code.xml" value="0.3494791666666667" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_forgot_pass_email.xml" value="0.18802083333333333" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_home.xml" value="0.23125" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_login.xml" value="0.18" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_register_photo.xml" value="0.2" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_register_profession.xml" value="0.18" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_search_job.xml" value="0.22" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/header_navigation.xml" value="0.19427083333333334" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/item_job.xml" value="0.22" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/search_view_layout.xml" value="0.25885416666666666" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/menu/top_app_bar.xml" value="0.33" />
+        <entry key="..\:/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/menu/top_app_bar_search.xml" value="0.1" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_add_job_offer.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_add_job_offer_second.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_forgot_pass_code.xml" value="0.33" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_forgot_pass_email.xml" value="0.33" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_forgot_pass_new.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_login.xml" value="0.5" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/fragment_register_profession.xml" value="0.22" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/header_navigation.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/item_job.xml" value="0.67" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/layout/topbar.xml" value="0.33" />
+        <entry key="..\:/Users/joshu/Documents/Workspaces/Moviles/poryecto-guanacobusiness/MobileApp/app/src/main/res/menu/main_menu.xml" value="0.12407407407407407" />
+        <entry key="..\:/Users/pc/Desktop/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/MobileApp/app/src/main/res/layout/fragment_forgot_pass_code.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/MobileApp/app/src/main/res/layout/item_department.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allOffers"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/navBarOffers"/>
+
+    <item
+        android:id="@+id/aplicatedOffers"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_business_center_24"
+        android:title="@string/navBarAplicatedOffers"/>
+
+    <item
+        android:id="@+id/CV"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_insert_drive_file_24"
+        android:title="@string/navBarCV"/>
+
+    <item
+        android:id="@+id/myOffers"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_assignment_turned_in_24"
+        android:title="@string/navBarMyOffers"/>
+
+</menu>

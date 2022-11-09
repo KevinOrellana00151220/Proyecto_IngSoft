@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_register"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.guanacobusiness.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_registerPhotoFragment"
+            app:destination="@id/registerPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerProfessionFragment"
+        android:name="com.guanacobusiness.RegisterProfessionFragment"
+        android:label="RegisterProfessionFragment" >
+        <action
+            android:id="@+id/action_registerProfessionFragment_to_registerPhotoFragment"
+            app:destination="@id/registerPhotoFragment" />
+        <action
+            android:id="@+id/action_registerProfessionFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPhotoFragment"
+        android:name="com.guanacobusiness.RegisterPhotoFragment"
+        android:label="RegisterPhotoFragment" >
+        <action
+            android:id="@+id/action_registerPhotoFragment_to_registerProfessionFragment2"
+            app:destination="@id/registerProfessionFragment" />
+        <action
+            android:id="@+id/action_registerPhotoFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_registerPhotoFragment_to_registerProfessionFragment"
+            app:destination="@id/registerProfessionFragment" />
+    </fragment>
+</navigation>

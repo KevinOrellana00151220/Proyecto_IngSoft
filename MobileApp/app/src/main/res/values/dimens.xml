@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="xl_gap">64dp</dimen>
+    <dimen name="large_gap">32dp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="small_gap">8dp</dimen>
+    <dimen name="width_logo">200dp</dimen>
+    <dimen name="height_logo">250dp</dimen>
+    <dimen name="padding_horizontal_buttons">120dp</dimen>
+    <dimen name="xxl_gap">128dp</dimen>
+</resources>

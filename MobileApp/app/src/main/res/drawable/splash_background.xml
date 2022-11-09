@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/splash_background"
+        android:drawable="@color/my_app_surface_variant" />
+
+
+    <item android:id="@+id/splash_picture"
+
+        android:left="@dimen/xl_gap"
+        android:top="@dimen/xl_gap"
+        android:right="@dimen/xl_gap"
+        android:bottom="@dimen/xl_gap"
+        >
+        //TODO: Add an guanaco image .svg here
+        <bitmap android:src="@drawable/guanaco"
+            android:gravity="center"
+            />
+
+        </item>
+
+
+
+</layer-list>

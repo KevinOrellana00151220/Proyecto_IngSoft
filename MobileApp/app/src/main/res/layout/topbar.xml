@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/top_bar_app"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.GuanacoBusiness">
+
+
+    <ImageView
+        android:id="@+id/mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameBarApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        tools:text="DanyFifitax"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintEnd_toStartOf="@+id/userpfp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userProfessionBarApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/small_gap"
+        android:layout_marginBottom="@dimen/small_gap"
+        tools:text="Doctor"
+        android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userpfp"
+        app:layout_constraintTop_toBottomOf="@+id/userNameBarApp" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userpfp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        tools:src="@drawable/guanaco"
+        app:civ_border_color="@color/material_dynamic_neutral0"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

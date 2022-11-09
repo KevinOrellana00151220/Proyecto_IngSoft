@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/medium_gap">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userpfpNavBar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/medium_gap"
+        app:civ_border_color="@color/material_dynamic_neutral0"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/guanaco" />
+
+    <TextView
+        android:id="@+id/userNameNavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_gap"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/my_app_on_secondary_container"
+        app:layout_constraintStart_toEndOf="@+id/userpfpNavBar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dario Nuñez" />
+
+    <TextView
+        android:id="@+id/userProfessionNavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_gap"
+        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+        android:textColor="@color/my_app_on_secondary_container"
+        app:layout_constraintEnd_toEndOf="@+id/userNameNavBar"
+        app:layout_constraintStart_toStartOf="@+id/userNameNavBar"
+        app:layout_constraintTop_toBottomOf="@+id/userNameNavBar"
+        tools:text="Veterinario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
