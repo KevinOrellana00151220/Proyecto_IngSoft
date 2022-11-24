@@ -3,6 +3,7 @@ package com.guanacobusiness.ui.Home
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -12,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 import com.guanacobusiness.R
 import com.guanacobusiness.adapter.JobAdapter
 import com.guanacobusiness.databinding.FragmentHomeBinding
@@ -36,6 +38,7 @@ class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private lateinit var adapter: JobAdapter
     private lateinit var bottomNav : BottomNavigationView
+    private lateinit var mainMenu : NavigationView
     private lateinit var navDrawer: DrawerLayout
     private val jobInfo = mutableListOf<job>()
     private lateinit var worktypeinfo: List<worktype>
@@ -45,6 +48,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true)
         binding = DataBindingUtil.inflate(inflater, R.layout.  fragment_home, container, false)
         return binding.root
     }
@@ -55,9 +59,16 @@ class HomeFragment : Fragment() {
 
         getAllJobs()
         initRecyclerView()
+        mainMenu = binding.navView
         navDrawer = binding.drawerLayout
         binding.include.mainMenu.setOnClickListener { navDrawer.open() }
+        binding.logOut.setOnClickListener {
+            val navController = NavHostFragment.findNavController(this)
+            navController.navigate(R.id.action_homeFragment_to_loginActivity)
+
+        }
         bottomNav = binding.bottomNavigation
+
         bottomNav.setOnNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.homePage -> {
@@ -76,6 +87,25 @@ class HomeFragment : Fragment() {
                 else -> false
             }
 
+        }
+
+        mainMenu.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.allOffers -> {
+                    true
+                }
+                R.id.aplicatedOffers -> {
+                    true
+                }
+                R.id.CV -> {
+                    goToCVPage()
+                    true
+                }
+                R.id.myOffers -> {
+                    true
+                }
+                else -> false
+            }
         }
 
         binding.addJobActionButton.setOnClickListener(){
@@ -142,4 +172,8 @@ class HomeFragment : Fragment() {
         navController.navigate(R.id.action_homeFragment_to_searchJobFragment)
     }
 
+    private fun goToCVPage(){
+        val navController = NavHostFragment.findNavController(this)
+        navController.navigate(R.id.action_homeFragment_to_curriculumFragment)
+    }
 }

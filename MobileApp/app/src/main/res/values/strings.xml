@@ -58,4 +58,13 @@
     <string name="navBarMyOffers">Mis publicaciones</string>
     <string name="navBarLogOut">Cerrar Sesion</string>
     <string name="company">Company</string>
+    <string name="addCV">Agregar CV</string>
+    <string name="full_nameCV">Nombre completo</string>
+    <string name="gender">Género</string>
+    <string name="emailCV">Correo Electrónico</string>
+    <string name="addressCV">Dirección</string>
+    <string name="experienceCV">Experiencia Laboral</string>
+    <string name="abilities">Habilidades</string>
+    <string name="languages">Idiomas</string>
+    <string name="edit_btn_message">Editar</string>
 </resources>

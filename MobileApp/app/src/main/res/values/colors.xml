@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     #light theme colors
-    <color name="my_app_primary">#00668B</color>
+    <color name="my_app_primary">#AB0000</color>
     <color name="my_app_secondary">#4E616D</color>
     <color name="my_app_background">#FBFCFF</color>
     <color name="my_app_error">#BA1B1B</color>
 
-    <color name="my_app_primary_inverse">#79D0FF</color>
+    <color name="my_app_primary_inverse">#FFCFCF</color>
     <color name="my_app_on_primary_inverse">#D1E5F4</color>
-    <color name="my_app_primary_container">#C3E7FF</color>
-    <color name="my_app_on_primary_container">#001E2D</color>
+    <color name="my_app_primary_container">#FFECEC</color>
+    <color name="my_app_on_primary_container">#AB0000</color>
     <color name="my_app_secondary_container">#D1E5F4</color>
     <color name="my_app_on_secondary_container">#0A1E28</color>
     <color name="my_app_tertiary">#0A1E28</color>

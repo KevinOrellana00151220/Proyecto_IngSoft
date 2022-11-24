@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddCurriculumFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_Curriculum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/exitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_baseline_close_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:id="@+id/scrollID"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_Curriculum">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/emailCV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/jobImageAddJobEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fullnameCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/full_nameCV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailCV">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullnameCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/genderCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/gender"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fullnameCV">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/genderCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/addressCV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/genderCV">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addressCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/experienceCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/experienceCV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addressCV">
+
+                    <EditText
+                        android:id="@+id/experienceCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:padding="15dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/abilitiesCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/abilities"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/experienceCV">
+
+                    <EditText
+                        android:id="@+id/abilitiesCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:padding="15dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/languagesCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_gap"
+                    android:layout_marginTop="@dimen/large_gap"
+                    android:layout_marginEnd="@dimen/medium_gap"
+                    android:hint="@string/languages"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abilitiesCV">
+
+                    <EditText
+                        android:id="@+id/languagesCVEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:padding="15dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/AddCV"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_gap"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/medium_gap"
+            android:paddingHorizontal="@dimen/padding_horizontal_buttons"
+            android:text="@string/addCV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollID" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

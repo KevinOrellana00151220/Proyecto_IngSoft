@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -29,7 +29,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/small_gap"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+                app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvJobs"
+                    android:id="@+id/recycleViewCV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -48,26 +48,21 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/addJob_action_button"
+                android:id="@+id/addCV_action_button"
                 android:layout_width="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="16dp"
-                android:layout_marginEnd="@dimen/small_gap"
-                android:layout_marginBottom="@dimen/medium_gap"
                 android:contentDescription="@string/add_button_message"
-                app:srcCompat="@drawable/ic_baseline_add_24"
-                app:layout_constraintBottom_toBottomOf="@+id/rvJobsContainer"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
+
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:menu="@menu/bottom_navigation_menu" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
